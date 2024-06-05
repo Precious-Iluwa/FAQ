@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+body{
+    background-color: hsl(275, 100%, 97%);
+}
+
+.image img{
+    width: 100%;
+    position: absolute;
+}
+
+#mobile-pattern{
+    display: none;
+}
+
+/* Accordion canvas style */
+.accordion{
+    width: 35%;
+    height: auto;
+    position: absolute;
+    background-color: #fff;
+    border: none;
+    border-radius: .7rem;
+    margin: 11rem 0 0 28rem;
+    padding: 2.5rem 2rem;
+    padding-bottom: 1rem;
+    box-shadow: 1px 10px 50px 1px hsla(293, 16%, 49%, 0.234);
+}
+
+/* Accordion content style */
+.faq-head{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+
+.faq-head h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: hsl(292, 42%, 14%);
+}
+
+.intro-txt{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.intro-txt p, .options a{
+    font-size: .9rem;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+}
+
+.body-txt{
+    margin-bottom: 2rem;
+}
+
+.body-txt p{
+    font-size: .9rem;
+    color: hsla(293, 16%, 49%, 0.775);
+    line-height: 1.4rem;
+}
+
+/* FAQ Questions style */
+.questions .options a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 2.5rem; */
+    border-top: 1px solid hsla(293, 16%, 49%, 0.234);
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.options a{
+    font-size: .8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.options a:hover{
+    color: hsl(293, 70%, 45%);
+}
+
+/* .options a:active{
+    color: hsl(293, 70%, 45%);
+}
+
+.options a:visited{
+    color: hsl(293, 20%, 8%);
+} */
+
+#content, #content1, #content2{
+    font-size: .9rem;
+    color: hsl(292, 42%, 14%);
+    padding-bottom: 1rem;
+    line-height: 1.3rem;
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 400px ) {
+    .image img{
+        display: none;
+    }
+
+    #mobile-pattern{
+        display: flex;
+        position: absolute;
+    }
+
+    .faq-head{
+        margin-bottom: 1.3rem;
+    }
+
+    .faq-head h1{
+        font-weight: 700;
+    }
+
+    .accordion{
+        position: absolute;
+        margin: 8rem 1rem 0 1rem;
+        width: 92%;
+    }
+
+    .intro-txt p{
+        font-size: 1.1rem;
+        padding-right: 2rem;
+    }
+
+    .options a{
+        font-size: .9rem;
+        line-height: 1.3rem;
+    }
+    .options img{
+        margin-left: 1.5rem;
+    }
+    
+    .faq{
+        height: 900px;
+    }
+}

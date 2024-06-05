@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | ACCORDION | FRONTEND MENTOR</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.google.com/specimen/Work+Sans"> -->
+</head>
+<body>
+    <!-- Header -->
+    <div class="faq">
+        <div class="image">
+            <img src="./assets/images/background-pattern-desktop.svg" alt="image">
+            <img id="mobile-pattern" src="./assets/images/background-pattern-mobile.svg" alt="image">
+        </div>
+
+        <!-- Accordion Structure -->
+        <div class="accordion">
+            <div class="faq-head">
+                <img src="./assets/images/icon-star.svg" alt="icon">
+                <h1>FAQs</h1>
+            </div>
+            <div class="intro-txt">
+                <p>What is Frontend Mentor, and how will it help me?</p>
+                <img src="./assets/images/icon-minus.svg" alt="icon">
+            </div>
+            <div class="body-txt">
+                <p>Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+            </div>
+
+            <!-- Accordion Questions -->
+            <div class="questions">
+                <div class="options">
+                    <a href="#" id="toggleButton">Is Frontend Mentor free? <img src="./assets/images/icon-plus.svg" alt="icon"></a>
+                    <p id="content">Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+                </div>
+                <div class="options">
+                    <a href="#" id="toggleButton1">Can I use Frontend Mentor projects in my portfolio? <img src="./assets/images/icon-plus.svg" alt="icon"></a>
+                    <p id="content1">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers! </p>
+                </div>
+                <div class="options">
+                    <a href="#" id="toggleButton2">How can I get help if I'm stuck on a Frontend Mentor challenge? <img src="./assets/images/icon-plus.svg" alt="icon"></a>
+                    <p id="content2">The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        let toggleButton = document.getElementById('toggleButton');
+        // const content = document.getElementById('content');
+
+        toggleButton.addEventListener('click', function() {
+                if (document.getElementById('content').style.display == 'block'){
+                    document.getElementById('content').style.display = 'none';
+                } else {
+                    document.getElementById('content').style.display = 'block';
+                }
+                document.getElementById('toggleButton').addEventListener('click', toggleButton);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        let toggleButton = document.getElementById('toggleButton1');
+        // const content = document.getElementById('content');
+
+        toggleButton.addEventListener('click', function() {
+                if (document.getElementById('content1').style.display == 'block'){
+                    document.getElementById('content1').style.display = 'none';
+                } else {
+                    document.getElementById('content1').style.display = 'block';
+                }
+                document.getElementById('toggleButton').addEventListener('click', toggleButton);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        let toggleButton = document.getElementById('toggleButton2');
+        // const content = document.getElementById('content');
+
+        toggleButton.addEventListener('click', function() {
+                if (document.getElementById('content2').style.display == 'block'){
+                    document.getElementById('content2').style.display = 'none';
+                } else {
+                    document.getElementById('content2').style.display = 'block';
+                }
+                document.getElementById('toggleButton').addEventListener('click', toggleButton);
+            });
+        });
+    </script>
+</body>
+</html>
