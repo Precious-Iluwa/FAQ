@@ -27,7 +27,7 @@ body{
     background-color: #fff;
     border: none;
     border-radius: .7rem;
-    margin: 11rem 0 0 28rem;
+    margin: 11rem 0 0 31rem;
     padding: 2.5rem 2rem;
     padding-bottom: 1rem;
     box-shadow: 1px 10px 50px 1px hsla(293, 16%, 49%, 0.234);
@@ -110,7 +110,7 @@ body{
 }
 
 /* Media Queries */
-@media screen and (max-width: 400px ) {
+@media screen and (max-width: 475px ) {
     .image img{
         display: none;
     }
@@ -151,3 +151,45 @@ body{
         height: 900px;
     }
 }
+
+/* @media screen and (max-width: 800px ) {
+    .image img{
+        display: none;
+    }
+
+    #mobile-pattern{
+        display: flex;
+        position: absolute;
+    }
+
+    .faq-head{
+        margin-bottom: 1.3rem;
+    }
+
+    .faq-head h1{
+        font-weight: 700;
+    }
+
+    .accordion{
+        position: absolute;
+        margin: 18rem 1rem 0 7rem;
+        width: 70%;
+    }
+
+    .intro-txt p{
+        font-size: 1.1rem;
+        padding-right: 2rem;
+    }
+
+    .options a{
+        font-size: .9rem;
+        line-height: 1.3rem;
+    }
+    .options img{
+        margin-left: 1.5rem;
+    }
+    
+    .faq{
+        height: 900px;
+    }
+} */
