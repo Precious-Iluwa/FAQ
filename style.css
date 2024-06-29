@@ -101,7 +101,7 @@ body{
     color: hsl(293, 20%, 8%);
 } */
 
-#content, #content1, #content2{
+#content1, #content2, #content3, #content4{
     font-size: .9rem;
     color: hsl(292, 42%, 14%);
     padding-bottom: 1rem;
